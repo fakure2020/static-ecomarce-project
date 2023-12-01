@@ -22,10 +22,10 @@
   - name: Clone a repo with separate git directory
     ansible.builtin.git:
       repo: https://github.com/fakure2020/static-ecomarce-project.git
-      dest: /home/ansible/ecommerce-static-application
+      dest: /home/ansible/application-Server
 
   - name: Copy project files into dedicated directory
     ansible.builtin.copy:
-      src: //home/ansible/ecommerce-static-application
+      src: /home/ansible/application-Server/onlineShop-application
       dest: /var/www/html/
       remote_src: yes
